@@ -1,0 +1,594 @@
+/* Font-Size / Font-Weight */
+* {
+    font-family: 'Outfit', 'Arial';
+    font-size: 15px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-52 {
+    font-size: 52px;
+}
+
+.fs-69 {
+    font-size: 69px;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+/* Font-Size / Font-Weight */
+
+
+/* NAVBAR */
+.mx-nav {
+    margin: auto 11px;
+}
+
+.px-nav {
+    padding-left: 25px;
+    padding-right: 40px;
+}
+
+.navbar {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0,0.05);
+}
+
+
+@media (min-width: 992px) {
+    .px-nav {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .px-contactos {
+        padding-left: 11px !important;
+        padding-right: 11px !important;
+
+        border: 1pt solid #1559B7;
+        color: #1559B7 !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1) !important;
+
+    }
+
+
+    .nav-link.px-contactos:hover {
+        color: white !important;
+        background-color: #1559B7 !important;
+        font-weight: 400 !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0) !important;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0)!important;
+        transition: 0.2s;
+    }
+
+}
+
+
+.ipl-hover {
+    filter: invert(0);
+    transition: 0.08s ease-in-out;
+}
+
+.ipl-hover:hover {
+    filter: invert(0.3);
+}
+
+.li-hover:hover {
+    color:#1559B7 !important;
+    font-weight: 600; /*Semi-Bold */
+    transition: 0.08s;
+    font-size: 15px;
+}
+/* NAVBAR */
+
+
+
+
+
+
+
+/* --------------- HOMEPAGE --------------- */
+
+
+
+/* CAROUSEL */
+.carousel-bg-light {
+    background-color: #EDEDED;
+}
+
+.carousel-bg-black {
+    background-color: #000000;
+}
+
+
+.carousel-control-prev , .carousel-control-next {
+    width: 7% !important;
+}
+
+.slider-wh {
+    width: 70px !important;
+    height: 4px !important;
+}
+
+.carousel-indicators .active {
+    background-color: #1559B7 !important; /* Cor azul */
+}
+
+.carousel-indicators button {
+    background-color: #D9D9D9 !important; /* Cor cinzenta */
+}
+
+.padding-carousel {
+    padding: 80px 90px;
+}
+
+.btn-explorar {
+    text-decoration: none;
+    color: #1559B7;
+    border: 1pt solid #1559B7;
+    padding: 9px 38px;
+    transition: 0.08s ease-in-out;
+}
+
+.btn-explorar:hover {
+    color: white;
+    background-color: #1559B7;
+}
+
+.btn-explorar-aus {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1pt solid #ffffff;
+    padding: 9px 38px;
+    transition: 0.08s ease-in-out;
+}
+
+
+
+.btn-explorar-aus:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+#img_japao {
+    margin-right: 40px;
+    width: 38%;
+
+}
+
+#img_australia {
+
+    width: 42%;
+
+}
+
+.my-30 {
+    margin: 30px 0;
+}
+
+.me-15 {
+    margin-right: 40px;
+}
+
+.opacity-85 {
+    opacity: 85%;
+}
+
+
+
+.justify {
+    text-align: justify !important;
+}
+
+
+
+@media (max-width: 992px) {
+    .fs-69 {
+        font-size: 28px;
+    }
+
+    .padding-carousel {
+        padding: 10px 45px;
+    }
+
+    .carousel-control-prev , .carousel-control-next {
+        width: 12% !important;
+        display: block;
+    }
+
+    .me-15 {
+        margin-right: auto !important;
+
+    }
+
+    .mb-mobile {
+        margin-bottom: 8px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+   
+    #img_japao {
+        display: flex;
+        margin-right: 0px;
+        width: 100%;
+        padding: 0px 0px 45px 0px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    #img_australia {
+        display: flex;
+        margin-right: 0px;
+        width: 100%;
+        padding: 35px 0px 45px 0px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .my-30 {
+        margin: 40px auto;
+        align-content: center;
+    }
+
+    .btn-explorar {
+        margin: auto;
+        padding: 8px 40px;
+    }
+
+    .mobile-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+    .fs-69 {
+        font-size: 40px;
+    }
+
+    #img_japao {
+        align-self: center;
+        width: 45%;
+        height: fit-content;
+        margin-right: 0px !important;
+    }
+
+    #img_australia {
+        align-self: center;
+        width: 45%;
+        height: fit-content;
+        margin-right: 0px !important;
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.bar {
+    color: white;
+    opacity: 70%;
+}
+
+.carousel-inner {
+    height: 100% !important;
+}
+
+.carousel-control-prev-icon {
+    transition: 0.1s ease-in-out;
+    background-image: url(../img/prev.svg);
+}
+
+.carousel-control-next-icon {
+    transition: 0.05s ease-in-out;
+    background-image: url(../img/next.svg);
+}
+
+.carousel-control-next , .carousel-control-prev {
+    opacity: 100% !important;
+}
+
+.carousel-control-next:hover , .carousel-control-prev:hover {
+    filter: brightness(1.1) invert(0.1);
+    opacity: 80% !important;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out !important;
+    backface-visibility: hidden;
+}
+.carousel-inner {
+    overflow: hidden; /* Evita que os itens saiam do container */
+}
+/* CAROUSEL */
+
+/* EXPLORAR PAÍSES */
+.pd-paises {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: white;
+    height: 100% !important;
+}
+
+.img_country {
+    padding: 2px 2px !important;
+    width: 24%;
+    border: 1pt solid rgba(0,0,0,0.15);
+    border-radius: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    transition: 0.08s ease-in-out;
+}
+
+.img_country:hover {
+    padding: 0px 0px !important;
+    width: 24%;
+    border: 2pt solid #1559B7;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.marginPaises {
+    margin: auto 160px;
+}
+
+.marginEscolhaPais {
+    margin: 0 25%;
+}
+
+
+@media (max-width: 992px) {
+
+    .fs-52 {
+        font-size: 30px;
+    }
+
+    .img_country {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .img_country:hover {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .marginEscolhaPais {
+        margin: 0 10%;
+    }
+
+    .pd-paises {
+        padding: 40px 0 40px 0;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .marginPaises {
+        margin: auto 50px;
+    }
+}
+
+.padding_imgCountry {
+    padding: 15px 15px 0 15px;
+}
+/* EXPLORAR PAÍSES */
+
+/* EXPLORAR MUNDO */
+#explorarBg {
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    z-index: 1; /* Garante que o conteúdo fique acima */
+}
+
+#explorarBg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/explorar_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.28); /* Aplica o filtro apenas na imagem */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+
+#explora {
+    font-size: 52px;
+}
+
+.explorar {
+    padding: 80px;
+}
+
+.marginExploraMundo-P {
+    margin: 30px 13%;
+}
+
+@media (max-width: 1200px) {
+    .marginExploraMundo-P {
+        margin: 30px 20px;
+    }
+
+    #explora {
+        font-size: 35px;
+    }
+
+    .explorar {
+        padding: 60px 30px;
+    }
+}
+
+.btnExploraMundo {
+    text-decoration: none;
+    border: 1pt solid white;
+    background-color: white;
+    padding: 8px 30px;
+    color: black;
+
+}
+
+.btnExploraMundo:hover {
+    text-decoration: none;
+    border: 1pt solid white;
+    background-color: rgba(255, 255, 255,0.3);
+    padding: 8px 30px;
+    color: white;
+    transition: 0.08s ease-in-out;
+
+}
+
+.shadowExplora {
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.4) !important;
+}
+/* EXPLORAR MUNDO */
+
+/* SOBRE NÓS */
+.paddingSobreNos {
+    padding: 50px 160px;
+}
+
+.card-sobreNos {
+    width: 30%;
+    border: 1pt solid rgba(0,0,0,0.10);
+    transition: 0.15s ease-in-out;
+}
+
+.img-sobreNos {
+    padding: 20px 20px 0px 20px;
+}
+
+.card-sobreNos:hover {
+    box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.15) !important;
+    border: 1pt solid rgba(0,0,0,0);
+}
+
+#btn-maisInformacoes {
+    color: #1559B7;
+    background-color: white;
+    border: 1pt solid #1559B7;
+    transition: 0.1s ease-in-out;
+    padding: 4px 6px !important;
+
+    > span {
+        display: inline-flex;
+    }
+}
+
+#btn-maisInformacoes:hover {
+    color: #ffffff;
+    background-color: #1559B7;
+    border: 1pt solid #1559B7;
+
+    > span {
+        filter: grayscale(100) brightness(100);
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .card-sobreNos {
+        width: 100%;
+    }
+
+    .paddingSobreNos {
+        padding: 20px 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+    .card-sobreNos {
+        width: 100%;
+    }
+
+    .paddingSobreNos {
+        padding: 20px 50px;
+    }
+}
+
+/* SOBRE NÓS */
+
+/* FOOTER */
+.bg-footer {
+    padding: 30px 0 0px 0;
+    background-color: #F4F4F4;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px auto;
+  }
+  
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1pt solid #1559B7;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.08s ease-in-out;
+}
+  
+.img-socials {
+    height: 15px;
+}
+
+.social-link:hover {
+
+    img {
+        filter: grayscale(100) brightness(100);     
+    }
+    
+}
+  
+.social-link:hover {
+    background-color: #1559B7;
+
+}
+/* FOOTER */
+
+
