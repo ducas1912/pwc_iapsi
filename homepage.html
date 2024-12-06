@@ -3,107 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Projeto PWC</title>
-    
+        
     <!-- CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- CSS Separado com Prioridade -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- Importar Font 'OUTFIT' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
-    <body>
-        
-        <div class="container">
+<body>
 
-        
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand bg-white">
-                <div class="container d-flex align-items-center justify-content-between px-5">
 
-                        <!-- Logo IPLeiria -->
-                        <div>
-                            <a class="logo-ipleiria" href="homepage.html">
-                                <img src="assets/img/logo_ipleiria.png" alt="Politécnico de Leiria" name="Site do Politécnico de Leiria" width="166">
-                            </a>
-                        </div>
 
-                        <!-- Links da Navbar -->
-                        <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
-                            <a class="nav-link" href="#">Países</a>
-                            <a class="nav-link" href="#">Loja</a>
-                            <a class="nav-link" href="#">Sobre</a>
-                            <a class="nav-link border border-1 border-black" href="#">Contactos</a>
-                        </div>
 
-                </div>
-            </nav>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-white py-0 sticky-top">
+        <div class="container d-flex justify-content-between align-items-center px-nav">
+    
 
-            <!-- Slides -->
-            <section>
-
-                <div id="carouselExampleCaptions" class="carousel slide">
-
-                    <!-- Barras a indicar o Slide -->
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active bg-primary">
-
-                            <img src="assets/img/img_japao.png" class="d-float w-500 float-end m-5" alt="Descobre o Japão">
-
-                            <div class="carousel-caption d-none d-md-block text-start text-black">
-                                <h1>Descobre o Japão</h1>
-                                <p class="w-50">Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova
-                                    Iorque às antigas ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.<br><br>
-                                    Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
-                            </div>
-
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Butões (< / >) -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Seguinte</span>
-                    </button>
-
-                </div>
-
-            </section>
+            <!-- Logo Politécnico de Leiria -->
+            <a class="ipl-hover" href="https://www.ipleiria.pt" target="_blank">
+                <img src="assets/img/logo_ipleiria.png" alt="Politécnico de Leiria" title="Site do Politécnico de Leiria" height="60">
+            </a>
+    
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon justify-content-end"></span>
+            </button>
+    
+            <!-- Itens da Navbar -->
+            <div class="collapse navbar-collapse pb-2 py-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black mx-nav li-hover fs-15" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black mx-nav li-hover fs-15" href="paises.html">Países</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black mx-nav li-hover fs-15" href="loja.html">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black mx-nav li-hover fs-15" href="favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-nav text-black px-contactos li-hover fs-15" href="contactos.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
 
 
         </div>
+    </nav>
+    
+
+    <!-- CAROUSEL -->
+    <div class="container p-0">
+        <section>
+            <div id="carouselDescobre" class="carousel carousel-dark slide" data-bs-interval="false">
+                <div class="carousel-indicators my-2 my-md-4 py-2">
+                  <button type="button" data-bs-target="#carouselDescobre" data-bs-slide-to="0" class="active slider-wh" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselDescobre" data-bs-slide-to="1" class="slider-wh" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
 
 
+                    <div class="carousel-item active carousel-bg-light d-flex padding-carousel" data-bs-target="5000">
+                        <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
 
-        <!-- JavaScript do Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+                            <div class="d-block justify-content-center">
+                                <h5 class="fw-bold fs-69 text-black mt-3 mb-3 my-md-4 mobile-center">Descobre o Japão</h5>
+                                <hr class="d-block d-lg-none">
+                                <div class="me-15 d-none flex-column d-md-flex opacity-85">
+                                    <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
+                                    <p>Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
+                                </div>
+                                <div class="d-md-none text-center justify opacity-85 my-4">
+                                    <p class="mb-mobile">Faz uma viagem pelos destinos mais deslumbrantes do mundo.</p>
+                                    <p class="mb-mobile">Das ruas vibrantes de Nova Iorque às antigas ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
+                                    <p class="mb-mobile">Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
+                                </div>
+                                <div class="my-30 mobile-center">
+                                    <a href="#" class="btn-explorar">Explorar</a> 
+                                </div>
+                            </div>
+                                <img src="assets/img/img_japao.png" class="img-fluid" id="img_japao" class="d-block" alt="Descobre o Japão">
+                        </div>
+                    </div>
 
-        <!-- JavaScript Separado com Prioridade -->
-        <script src="assets/js/homepage.js"></script>
-    </body>
+
+                  <div class="carousel-item carousel-bg-black padding-carousel" data-bs-target="2000">
+                    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+
+                        <div class="d-block justify-content-center">
+                            <h5 class="fw-bold fs-69 text-white mt-3 mb-3 my-md-4 mobile-center">Descobre a Austrália</h5>
+                            <hr class="d-block d-lg-none bar">
+                            <div class="me-15 d-none flex-column d-md-flex opacity-85 text-white p-aus">
+                                <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
+                                <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
+                            </div>
+                            <div class="d-md-none text-center justify opacity-85 text-white my-4">
+                                <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
+                                <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
+                            </div>
+                            <div class="my-30 mobile-center">
+                                <a href="#" class="btn-explorar-aus">Explorar</a> 
+                            </div>
+                        </div>
+                            <img src="assets/img/img_australia.png" class="img-fluid" id="img_australia" class="d-block" alt="Descobre o Japão">
+                    </div>
+                  </div>
+                  
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDescobre" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDescobre" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+       
+        <section>
+            <div class="pd-paises">
+                <div class="d-flex justify-content-center flex-column align-items-center mb-4">
+                    <div>
+                        <h5 class="fs-52 fw-bold text-black mb-3">Escolha o País</h5>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center text-center d-lg-none marginEscolhaPais opacity-85 align-items-center justify">
+                        <p>Escolha um destino para explorar a sua singularidade, cultura e atrações.</p>
+                        <p>Descubra os lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.</p>
+                    </div>
+                    <div class="d-none d-lg-flex marginEscolhaPais opacity-85 text-center">
+                        <p>Escolha um destino para explorar a sua singularidade, cultura e atrações. Descubra os lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.</p>
+                    </div>
+                </div>
+                <div class="marginPaises">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        
+                        <div class="card p-2 mx-3 img_country">
+                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-usa.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
+                                <div class="card-body text-center align-content-center py-4 px-0">
+                                    <p class="card-text fw-medium fs-18">Estados Unidos da América</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card p-2 mx-3 img_country">
+                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-canada.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
+                                <div class="card-body text-center align-content-center py-4 px-0">
+                                    <p class="card-text fw-medium fs-18">Canadá</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-2 mx-3 img_country">
+                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-uk.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
+                                <div class="card-body text-center align-content-center py-4 px-0">
+                                    <p class="card-text fw-medium fs-18">Reino Unido</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>      
+                </div>
+
+            </div>
+        </section>
+
+        <section class="shadowExplora">
+            <div id="explorarBg">
+                <div class="explorar">
+                    <div class="text-white text-center">
+                        <h5 id="explora" class="fw-bold">Explora o Mundo Connosco</h5>
+                    </div>
+                    <div class="text-white d-none d-lg-flex flex-column text-center marginExploraMundo-P opacity-85">
+                        <p>Embarca numa aventura para descobrir os destinos mais cativantes do mundo, desde paisagens urbanas vibrantes até serenas maravilhas naturais. Explora o encanto único de cada país, rico em cultura, história e experiências inesquecíveis. Deixa-nos ser o teu guia até lugares que inspiram e despertam o espírito de exploração. Em cada viagem, descobre novas perspetivas e tesouros escondidos à espera de serem revelados. Começa a tua aventura hoje e cria memórias que durarão para toda a vida.</p>
+                    </div>                    <div class="d-lg-none d-flex flex-column text-white text-center marginExploraMundo-P justify opacity-85">
+                        <p>Embarca numa aventura para descobrir os destinos mais cativantes do mundo, desde paisagens urbanas vibrantes até serenas maravilhas naturais.<br>Explora o encanto único de cada país, rico em cultura, história e experiências inesquecíveis. <br>Deixa-nos ser o teu guia até lugares que inspiram e despertam o espírito de exploração. <br>Em cada viagem, descobre novas perspetivas e tesouros escondidos à espera de serem revelados. <br>Começa a tua aventura hoje e cria memórias que durarão para toda a vida.</p>
+
+                    </div>
+                    <div class=" d-flex justify-content-center my-4">
+                        <a href="#" class="btnExploraMundo">Explorar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="d-flex justify-content-center flex-column align-items-center my-4 paddingSobreNos">
+                <div>
+                    <h5 class="fs-52 fw-bold text-black mb-3">Sobre Nós</h5>
+                </div>
+                <div class="d-flex flex-column flex-lg-row align-content-center justify-content-center my-4">
+                    <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold fs-25 text-center">Diego Teixeira</h5>
+                            <p class="card-text opacity-85 text-center">Estudante</p>
+                            <div class="d-flex justify-content-center align-content-center my-2">
+                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold fs-25 text-center">Eduardo Carvalho</h5>
+                            <p class="card-text opacity-85 text-center">Estudante</p>
+                            <div class="d-flex justify-content-center align-content-center my-2">
+                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold fs-25 text-center">Miguel Filipe</h5>
+                            <p class="card-text opacity-85 text-center">Estudante</p>
+                            <div class="d-flex justify-content-center align-content-center my-2">
+                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-footer">
+                <div class="d-flex justify-content-center align-content-center py-2">
+                    <img src="assets/img/logo_ipleiria.png" width="215">
+                </div>
+                <div class="align-content-center text-center py-2">
+                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Home</a>
+                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Países</a>
+                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Loja</a>
+                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Favoritos</a>
+                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Contactos</a>
+                </div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com" class="social-link" target="_blank">
+                          <img src="assets/img/linkedin.png" class="img-socials" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.facebook.com" class="social-link" target="_blank">
+                          <img src="assets/img/facebook.png" class="img-socials" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com" class="social-link" target="_blank">
+                          <img src="assets/img/instagram.png" class="img-socials" alt="Instagram">
+                        </a>
+                        <a href="https://www.x.com" class="social-link" target="_blank">
+                          <img src="assets/img/x.png" class="img-socials" alt="X">
+                        </a>
+                      </div>
+                      
+
+                </div>
+                <hr>
+                <div class="align-content-center text-center py-2">
+                    <p class="fs-13">© 2024 Direitos de Autor, Todos os direitos reservados</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Separado com Prioridade -->
+    <script src="assets/js/homepage.js"></script>
+</body>
 </html>
