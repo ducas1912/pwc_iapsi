@@ -1,22 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto PWC</title>
         
-        <title>Projeto PWC</title>
-        
-        <!-- CSS do Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <!-- CSS Separado com Prioridade -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS Separado com Prioridade -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    </head>
-    <body>
-        
-        <div class="container">
-            
-            <!-- NAVBAR-->
+    <!-- Importar Font 'OUTFIT' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+        <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-white py-0 sticky-top">
         <div class="container d-flex justify-content-between align-items-center px-nav">
     
@@ -55,6 +58,8 @@
 
         </div>
     </nav>
+        <div class="container">
+            
             
             <!--Titulo da página dos paises-->
             <div class="p-4 text-center">
@@ -166,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
 
             <!--Paginação dos paises-->
             <div class="p-4 m-3">
@@ -185,11 +190,14 @@
                 </nav>
             </div>
             
-            <!--Footer da página-->
+        <!-- FOOTER -->
+        <section>
             <div class="bg-footer">
                 <div class="d-flex justify-content-center align-content-center py-2">
                     <img src="assets/img/logo_ipleiria.png" width="215">
                 </div>
+
+                <!-- Menu -->
                 <div class="align-content-center text-center py-2">
                     <a href="#" class="text-black mx-3 li-hover text-decoration-none">Home</a>
                     <a href="#" class="text-black mx-3 li-hover text-decoration-none">Países</a>
@@ -197,6 +205,8 @@
                     <a href="#" class="text-black mx-3 li-hover text-decoration-none">Favoritos</a>
                     <a href="#" class="text-black mx-3 li-hover text-decoration-none">Contactos</a>
                 </div>
+
+                <!-- Redes Sociais -->
                 <div class="d-flex align-content-center justify-content-center">
                     <div class="social-links">
                         <a href="https://www.linkedin.com" class="social-link" target="_blank">
@@ -220,7 +230,17 @@
                     <p class="fs-13">© 2024 Direitos de Autor, Todos os direitos reservados</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Separado com Prioridade -->
+    <script src="assets/js/paises.js"></script>
 
 
     </body>
