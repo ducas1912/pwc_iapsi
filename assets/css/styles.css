@@ -4,6 +4,16 @@
     font-size: 15px;
 }
 
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
 .fs-13 {
     font-size: 13px;
 }
@@ -12,12 +22,24 @@
     font-size: 15px;
 }
 
+.fs-16 {
+    font-size: 16px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
 
+.fs-23 {
+    font-size: 23px;
+}
+
 .fs-25 {
     font-size: 25px;
+}
+
+.fs-45 {
+    font-size: 45px;
 }
 
 .fs-52 {
@@ -39,8 +61,14 @@
 .fw-bold {
     font-weight: 700;
 }
+
+
 /* Font-Size / Font-Weight */
 
+
+
+
+/* ---------------------------------------  HOMEPAGE --------------------------------------- */
 
 /* NAVBAR */
 .mx-nav {
@@ -53,7 +81,7 @@
 }
 
 .navbar {
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0,0.05);
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0,0.05);
 }
 
 
@@ -89,7 +117,7 @@
 
 .ipl-hover {
     filter: invert(0);
-    transition: 0.08s ease-in-out;
+    transition: 0.12s ease-in-out;
 }
 
 .ipl-hover:hover {
@@ -197,7 +225,9 @@
     opacity: 85%;
 }
 
-
+.opacity-30 {
+    opacity: 30%;
+}
 
 .justify {
     text-align: justify !important;
@@ -300,11 +330,6 @@
 }
 
 
-.bar {
-    color: white;
-    opacity: 70%;
-}
-
 .carousel-inner {
     height: 100% !important;
 }
@@ -345,17 +370,19 @@
     height: 100% !important;
 }
 
-.img_country {
+.card_country {
     padding: 2px 2px !important;
     width: 24%;
     border: 1pt solid rgba(0,0,0,0.15);
     border-radius: 0;
     box-sizing: border-box;
     flex-grow: 1;
-    transition: 0.08s ease-in-out;
+    transition: 0.1s ease-in-out;
+    min-height: 278px;
+    max-height: 278px;
 }
 
-.img_country:hover {
+.card_country:hover {
     padding: 0px 0px !important;
     width: 24%;
     border: 2pt solid #1559B7;
@@ -470,7 +497,7 @@
 .btnExploraMundo:hover {
     text-decoration: none;
     border: 1pt solid white;
-    background-color: rgba(255, 255, 255,0.3);
+    background-color: rgba(255, 255, 255,0.4);
     padding: 8px 30px;
     color: white;
     transition: 0.08s ease-in-out;
@@ -590,5 +617,75 @@
 
 }
 /* FOOTER */
+
+
+/* ---------------------------------------  PÁGINA DE CONTACTOS --------------------------------------- */
+
+.cardContactos {
+    width: 350px;
+    border: 1pt solid rgba(0,0,0,0.10);
+    transition: 0.15s ease-in-out;
+}
+
+.imgContactos {
+    padding: 20px 20px 0px 20px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.cardContactos:hover {
+    box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.15) !important;
+    border: 1pt solid rgba(0,0,0,0);
+}
+
+.sucess {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    background-color: rgba(40, 150, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
+    transition: 0.15s ease-in-out;
+}
+
+.sucess:hover {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: darkgreen;
+    background-color: rgba(40, 200, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
+}
+
+
+
+.error {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid darkred;
+    color: darkred;
+    background-color: rgba(150, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
+    transition: 0.15s ease-in-out;
+}
+
+.error:hover {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: darkred;
+    background-color: rgba(200, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
+}
 
 

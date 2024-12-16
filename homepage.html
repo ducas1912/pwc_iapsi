@@ -83,7 +83,7 @@
 
                             <div class="d-block justify-content-center">
                                 <h5 class="fw-bold fs-69 text-black mt-3 mb-3 my-md-4 mobile-center">Descobre o Japão</h5>
-                                <hr class="d-block d-lg-none">
+                                <hr class="d-block d-lg-none line">
                                 <div class="me-15 d-none flex-column d-md-flex opacity-85">
                                     <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
                                     <p>Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
@@ -94,7 +94,7 @@
                                     <p class="mb-mobile">Quer seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
                                 </div>
                                 <div class="my-30 mobile-center">
-                                    <a href="#" class="btn-explorar">Explorar</a> 
+                                    <a href="paises.html" class="btn-explorar">Explorar</a> 
                                 </div>
                             </div>
                                 <img src="assets/img/img_japao.png" class="img-fluid" id="img_japao" class="d-block" alt="Descobre o Japão">
@@ -107,7 +107,7 @@
 
                             <div class="d-block justify-content-center">
                                 <h5 class="fw-bold fs-69 text-white mt-3 mb-3 my-md-4 mobile-center">Descobre a Austrália</h5>
-                                <hr class="d-block d-lg-none bar">
+                                <hr class="d-block d-lg-none line-inverted">
                                 <div class="me-15 d-none flex-column d-md-flex opacity-85 text-white p-aus">
                                     <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
                                     <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
@@ -117,7 +117,7 @@
                                     <p>A Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
                                 </div>
                                 <div class="my-30 mobile-center">
-                                    <a href="#" class="btn-explorar-aus">Explorar</a> 
+                                    <a href="paises.html" class="btn-explorar-aus">Explorar</a> 
                                 </div>
                             </div>
                             <img src="assets/img/img_australia.png" class="img-fluid" id="img_australia" class="d-block" alt="Descobre o Japão">
@@ -126,12 +126,12 @@
 
                     <!-- Butões </> -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselDescobre" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselDescobre" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
 
               </div>
@@ -141,7 +141,7 @@
         <!-- PAÍSES -->
         <section>
             <div class="pd-paises">
-                <div class="d-flex justify-content-center flex-column align-items-center mb-4">
+                <div class="d-flex justify-content-center flex-column align-items-center mb-4" id="containerCountries">
 
                     <!-- Título -->
                     <div>
@@ -161,37 +161,12 @@
 
                 <!-- Países -->
                 <div class="marginPaises">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                        
-                        <!-- País 1 -->
-                        <div class="card p-2 mx-3 img_country">
-                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-usa.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
-                                <div class="card-body text-center align-content-center py-4 px-0">
-                                    <p class="card-text fw-medium fs-18">Estados Unidos da América</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- País 2 -->
-                        <div class="card p-2 mx-3 img_country">
-                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-canada.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
-                                <div class="card-body text-center align-content-center py-4 px-0">
-                                    <p class="card-text fw-medium fs-18">Canadá</p>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <!-- País 3 -->
-                        <div class="card p-2 mx-3 img_country">
-                            <a href="#" class="text-decoration-none text-black"><img src="assets/img/flag-uk.png" class="card-img-top padding_imgCountry" alt="Estados Unidos">
-                                <div class="card-body text-center align-content-center py-4 px-0">
-                                    <p class="card-text fw-medium fs-18">Reino Unido</p>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>      
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-stretch" id="randomCountries">
+                        <!-- OS 3 PAÍSES ALEATÓRIOS FICAM AQUI -->
+                         <div><p>Não conseguimos buscar os Países</p></div>
+                    </div>
                 </div>
+
 
             </div>
         </section>
@@ -210,9 +185,9 @@
                     <!-- Texto -->
                     <div class="text-white d-none d-lg-flex flex-column text-center marginExploraMundo-P opacity-85">
                         <p>Embarca numa aventura para descobrir os destinos mais cativantes do mundo, desde paisagens urbanas vibrantes até serenas maravilhas naturais. Explora o encanto único de cada país, rico em cultura, história e experiências inesquecíveis. Deixa-nos ser o teu guia até lugares que inspiram e despertam o espírito de exploração. Em cada viagem, descobre novas perspetivas e tesouros escondidos à espera de serem revelados. Começa a tua aventura hoje e cria memórias que durarão para toda a vida.</p>
-                    </div>                    <div class="d-lg-none d-flex flex-column text-white text-center marginExploraMundo-P justify opacity-85">
+                    </div>                    
+                    <div class="d-lg-none d-flex flex-column text-white text-center marginExploraMundo-P justify opacity-85">
                         <p>Embarca numa aventura para descobrir os destinos mais cativantes do mundo, desde paisagens urbanas vibrantes até serenas maravilhas naturais.<br>Explora o encanto único de cada país, rico em cultura, história e experiências inesquecíveis. <br>Deixa-nos ser o teu guia até lugares que inspiram e despertam o espírito de exploração. <br>Em cada viagem, descobre novas perspetivas e tesouros escondidos à espera de serem revelados. <br>Começa a tua aventura hoje e cria memórias que durarão para toda a vida.</p>
-
                     </div>
 
                     <!-- Explorar -->
@@ -237,81 +212,39 @@
                 <!-- Pessoa 1 -->
                 <div class="d-flex flex-column flex-lg-row align-content-center justify-content-center my-4">
                     <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
-                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person1.png" alt="Diego Teixeira">
                         <div class="card-body">
                             <h5 class="card-title fw-bold fs-25 text-center">Diego Teixeira</h5>
                             <p class="card-text opacity-85 text-center">Estudante</p>
                             <div class="d-flex justify-content-center align-content-center my-2">
-                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                                <a href="contactos.html" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Pessoa 2 -->
                     <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
-                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Eduardo Carvalho">
                         <div class="card-body">
                             <h5 class="card-title fw-bold fs-25 text-center">Eduardo Carvalho</h5>
                             <p class="card-text opacity-85 text-center">Estudante</p>
                             <div class="d-flex justify-content-center align-content-center my-2">
-                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                                <a href="contactos.html" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Pessoa 3 -->
                     <div class="card rounded-0 card-sobreNos my-3 my-lg-0 mx-0 mx-lg-3">
-                        <img class="card-img-top img-sobreNos" src="assets/img/person2.png" alt="Card image cap">
+                        <img class="card-img-top img-sobreNos" src="assets/img/person3.png" alt="Miguel Filipe">
                         <div class="card-body">
                             <h5 class="card-title fw-bold fs-25 text-center">Miguel Filipe</h5>
                             <p class="card-text opacity-85 text-center">Estudante</p>
                             <div class="d-flex justify-content-center align-content-center my-2">
-                                <a href="#" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
+                                <a href="contactos.html" id="btn-maisInformacoes" class="btn rounded-0 align-content-center">Mais Informações<span class="ps-2 align-content-center justify-content-center"><img src="assets/img/mais_informacoes.png" width="6"></span></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <section>
-            <div class="bg-footer">
-                <div class="d-flex justify-content-center align-content-center py-2">
-                    <img src="assets/img/logo_ipleiria.png" width="215">
-                </div>
-
-                <!-- Menu -->
-                <div class="align-content-center text-center py-2">
-                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Home</a>
-                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Países</a>
-                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Loja</a>
-                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Favoritos</a>
-                    <a href="#" class="text-black mx-3 li-hover text-decoration-none">Contactos</a>
-                </div>
-
-                <!-- Redes Sociais -->
-                <div class="d-flex align-content-center justify-content-center">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com" class="social-link" target="_blank">
-                          <img src="assets/img/linkedin.png" class="img-socials" alt="LinkedIn">
-                        </a>
-                        <a href="https://www.facebook.com" class="social-link" target="_blank">
-                          <img src="assets/img/facebook.png" class="img-socials" alt="Facebook">
-                        </a>
-                        <a href="https://www.instagram.com" class="social-link" target="_blank">
-                          <img src="assets/img/instagram.png" class="img-socials" alt="Instagram">
-                        </a>
-                        <a href="https://www.x.com" class="social-link" target="_blank">
-                          <img src="assets/img/x.png" class="img-socials" alt="X">
-                        </a>
-                      </div>
-                      
-                </div>
-                <hr>
-                
-                <div class="align-content-center text-center py-2">
-                    <p class="fs-13">© 2024 Direitos de Autor, Todos os direitos reservados</p>
                 </div>
             </div>
         </section>
@@ -319,9 +252,59 @@
     </div>
 
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg-footer">
+            <div class="container d-flex justify-content-center align-content-center py-2">
+                <a class="ipl-hover" href="https://www.ipleiria.pt" target="_blank">
+                    <img src="assets/img/logo_ipleiria.png" alt="Politécnico de Leiria" title="Site do Politécnico de Leiria" width="215">
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <div class="align-content-center text-center py-2">
+                <a href="#" class="text-black mx-3 li-hover text-decoration-none">Home</a>
+                <a href="#" class="text-black mx-3 li-hover text-decoration-none">Países</a>
+                <a href="#" class="text-black mx-3 li-hover text-decoration-none">Loja</a>
+                <a href="#" class="text-black mx-3 li-hover text-decoration-none">Favoritos</a>
+                <a href="#" class="text-black mx-3 li-hover text-decoration-none">Contactos</a>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="d-flex align-content-center justify-content-center">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" class="social-link" target="_blank">
+                        <img src="assets/img/linkedin.png" class="img-socials" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com" class="social-link" target="_blank">
+                        <img src="assets/img/facebook.png" class="img-socials" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" class="social-link" target="_blank">
+                        <img src="assets/img/instagram.png" class="img-socials" alt="Instagram">
+                    </a>
+                    <a href="https://www.x.com" class="social-link" target="_blank">
+                        <img src="assets/img/x.png" class="img-socials" alt="X">
+                    </a>
+                    </div>
+                    
+            </div>
+            <hr>
+            
+            <div class="align-content-center text-center py-2">
+                <p class="fs-13">© 2024 Direitos de Autor, Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
     <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- JavaScript Separado com Prioridade -->
     <script src="assets/js/homepage.js"></script>
