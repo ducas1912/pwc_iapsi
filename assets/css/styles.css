@@ -38,6 +38,10 @@ html, body {
     font-size: 25px;
 }
 
+.fs-30 {
+    font-size: 30px;
+}
+
 .fs-45 {
     font-size: 45px;
 }
@@ -62,6 +66,10 @@ html, body {
     font-weight: 700;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 
 /* Font-Size / Font-Weight */
 
@@ -81,7 +89,7 @@ html, body {
 }
 
 .navbar {
-    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0,0.05);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0,0.04);
 }
 
 
@@ -102,6 +110,10 @@ html, body {
 
     }
 
+    .nav-link {
+        transition: 0.08s ease-in-out;
+    }
+
 
     .nav-link.px-contactos:hover {
         color: white !important;
@@ -109,7 +121,7 @@ html, body {
         font-weight: 400 !important;
         text-shadow: 0 2px 4px rgba(0,0,0,0) !important;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0)!important;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
 
 }
@@ -405,6 +417,14 @@ html, body {
         font-size: 30px;
     }
 
+    .card_country {
+        width: 100% !important;
+    }
+
+    .card_country:hover {
+        width: 100%;
+    }
+
     .img_country {
         width: 100%;
         margin: 15px auto;
@@ -619,10 +639,148 @@ html, body {
 /* FOOTER */
 
 
+
+
+/* ---------------------------------------  PÁGINA DE PAÍSES --------------------------------------- */
+
+/* CARDS */
+.custom-card {
+    border-radius: 0px !important;
+    border: 1pt solid rgba(0,0,0,0.10);
+    transition: 0.15s ease-in-out;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    box-shadow: 0px 6px 40px 4px rgba(0,0,0,0.15) !important;
+    border: 1pt solid rgba(0,0,0,0);
+}
+
+.card-img-flag {
+    border-radius: 0px !important;
+    padding: 15px;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.line {
+    border: 1pt solid rgba(0,0,0,0.55);
+}
+
+.line-inverted {
+    border: 1pt solid rgba(255, 255, 255, 0.9);
+}
+
+.add-favorite {
+    background-image: url(../img/favourite.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    border: none;
+}
+
+.add-favorite:hover {
+    background-image: url(../img/favourite-hover.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    filter: brightness(1.1) opacity(0.9);
+    border: none;
+}
+
+.add-favorite:active {
+    background-image: url(../img/favourite-hover.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    filter: brightness(5) opacity(0.7);
+    border: none;
+}
+
+.remove-favorite {
+    background-image: url(../img/favourite-hover.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    border: none;
+}
+
+.remove-favorite:hover {
+    background-image: url(../img/favourite-hover.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    filter: brightness(1.1) opacity(0.9);
+    border: none;
+}
+
+.remove-favorite:active {
+    background-image: url(../img/favourite-hover.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    filter: brightness(5) opacity(0.7);
+    border: none;
+}
+/* CARDS */
+
+
+
+
+/* ---------------------------------------  PÁGINA DA LOJA --------------------------------------- */
+
+@media (max-width: 768px) {
+
+    #img-under-construction {
+        height: 280px;
+    }
+
+}
+
+
+
+
+/* ---------------------------------------  PÁGINA DE FAVORITOS --------------------------------------- */
+
+@media (max-width: 768px) {
+
+    #img-no-favourites {
+        height: 280px;
+    }
+
+}
+
+
+
+
 /* ---------------------------------------  PÁGINA DE CONTACTOS --------------------------------------- */
 
+.fixWidth {
+    width: -webkit-fill-available;
+}
+
 .cardContactos {
-    width: 350px;
+    width: 30%;
     border: 1pt solid rgba(0,0,0,0.10);
     transition: 0.15s ease-in-out;
 }
@@ -630,7 +788,7 @@ html, body {
 .imgContactos {
     padding: 20px 20px 0px 20px;
     object-fit: cover;
-    height: 200px;
+    height: 180px;
 }
 
 .cardContactos:hover {
@@ -638,11 +796,36 @@ html, body {
     border: 1pt solid rgba(0,0,0,0);
 }
 
+@media (max-width: 992px) {
+    .cardContactos {
+        width: 100%;
+    }
+
+    .cardContactos:hover {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .cardContactos {
+        width: 25%;
+    }
+
+    .cardContactos:hover {
+        width: 25%;
+    }
+}
+
+
+.invalid-feedback {
+    display: none;
+}
+
 .sucess {
     align-content: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid darkgreen;
+    border: 1px solid rgba(0,100,0,0.5);
     color: darkgreen;
     background-color: rgba(40, 150, 0, 0.1);
     padding: 10px;
@@ -668,7 +851,7 @@ html, body {
     align-content: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid darkred;
+    border: 1px solid rgba(139,0,0,0.5);
     color: darkred;
     background-color: rgba(150, 0, 0, 0.1);
     padding: 10px;
@@ -689,3 +872,10 @@ html, body {
 }
 
 
+#success-message {
+    display: none;
+}
+
+#error-message {
+    display: none;
+}

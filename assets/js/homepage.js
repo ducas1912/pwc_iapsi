@@ -78,9 +78,9 @@ $(document).ready(function () {
                 // Ciclo de forEach para dar Append dos 3 Países ao container #randomCountries
                 container.empty();  // o .empty limpa os anteriores
                 randomCountries.forEach (country => {
-                    // utilizar sempre `` , se utilizarmos '' temos que pôr sempre +
+                    
                     container.append(`
-                        <div class="card p-2 mx-3 card_country">
+                        <div class="card p-2 mx-3 my-3 my-lg-0 card_country">
                             <a href="pais.html?name=${country.name.common}" class="text-decoration-none text-black">
                                 <img src="${country.flags.svg}" class="card-img-top padding_imgCountry object-fit-cover" width="300px" height="200px" alt="${country.name.common}">
                                 <div class="card-body text-center align-content-center py-4 px-2">
