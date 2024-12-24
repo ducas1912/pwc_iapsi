@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Verificar se o Web Storage está a funcionar
     if (!localStorage) {
-        alert('A Web Storage não está funcional no seu browser. A funcionalidade de favoritos não está disponível!');
+        alert('A Web Storage não está a funcionar no teu browser. A funcionalidade de favoritos não está disponível!');
         return;
     }
 
