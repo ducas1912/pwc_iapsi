@@ -417,14 +417,6 @@ h1 {
         font-size: 30px;
     }
 
-    .card_country {
-        width: 100% !important;
-    }
-
-    .card_country:hover {
-        width: 100%;
-    }
-
     .img_country {
         width: 100%;
         margin: 15px auto;
@@ -445,10 +437,39 @@ h1 {
 
 }
 
+@media (max-width: 992px) {
+
+    .card_country {
+        width: 100%;
+    }
+
+    .card_country:hover {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .card_country {
+        width: 70%;
+    }
+
+    .card_country:hover {
+        width: 70%;
+    }
+}
+
 @media (max-width: 1200px) {
 
     .marginPaises {
         margin: auto 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .marginPaises {
+        margin: auto 60px;
     }
 }
 
@@ -796,7 +817,7 @@ h1 {
     border: 1pt solid rgba(0,0,0,0);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .cardContactos {
         width: 100%;
     }
@@ -806,13 +827,23 @@ h1 {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .cardContactos {
-        width: 25%;
+        width: 70%;
     }
 
     .cardContactos:hover {
-        width: 25%;
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .cardContactos {
+        width: 29%;
+    }
+
+    .cardContactos:hover {
+        width: 29%;
     }
 }
 

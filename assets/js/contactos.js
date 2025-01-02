@@ -1,13 +1,14 @@
 $(document).ready(function() {
-    // Event Listener de on-click do 'Submeter'
+
+    // Event Listener on-click do 'Submeter'
     $("#contact-form").on("submit", function(event) {
         // Previne o comportamento padrão de submissão
         event.preventDefault();
 
-        // Limpa as mensagens de erro e sucesso anteriores
+        // Limpa as mensagens de Sucesso e Erro anteriores
         clearMessages();
 
-        // Verifica se o formulário é válido
+        // Verifica se o formulário foi válido
         if (validateForm()) {
 
             // Dados do formulário já validados
@@ -17,10 +18,10 @@ $(document).ready(function() {
                 message: $('#message').val(),
             };
 
-            // Armazena os dados no localStorage
+            // Armazena os dados na Web Storage
             localStorage.setItem('formData', JSON.stringify(formData));
 
-            // Exibe a mensagem de sucesso
+            // Mostra a Mensagem de Erro
             $("#success-message").fadeIn().delay(5000).fadeOut();
 
         } 
@@ -31,14 +32,15 @@ $(document).ready(function() {
         }
     });
 
-    // Função para limpar as mensagens
+    // Função Limpar as Mensagens
     function clearMessages() {
-        // Limpa mensagens de erro
+
+        // Limpa mensagens de Erro
         $("#name-error").hide();
         $("#email-error").hide();
         $("#message-error").hide();
 
-        // Limpa mensagens de sucesso e erro
+        // Limpa mensagens de Sucesso e Erro
         $("#success-message").hide();
         $("#error-message").hide();
     }
@@ -58,7 +60,7 @@ $(document).ready(function() {
             isValid = false;
         }
 
-        // Validação do e-mail (não pode estar vazio)
+        // Validação do e-mail (Tem de incluir um '@')
         if ($.trim(emailInput.val()) === "") {
             $("#email-error").show();
             isValid = false;

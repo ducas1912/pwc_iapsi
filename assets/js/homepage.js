@@ -1,4 +1,4 @@
-// COR DAS SETAS DO CAROUSEL
+// MUDAR A COR DAS SETAS DO CAROUSEL
 $(document).ready(function () {
     const $carousel = $('#carouselDescobre');
     const $iconPrev = $('.carousel-control-prev-icon');
@@ -17,10 +17,10 @@ $(document).ready(function () {
                 opacity: '0.5',
             });
             $controlPrev.css({
-                pointerEvents: 'none',
+                pointerEvents: 'none', // Não deixa clicar no botão
             });
             $iconNext.css({
-                filter: 'none', // Azul (sem filtro)
+                filter: 'none',
                 opacity: '1',
             });
             $controlNext.css({
@@ -41,7 +41,7 @@ $(document).ready(function () {
                 opacity: '0.5',
             });
             $controlNext.css({
-                pointerEvents: 'none',
+                pointerEvents: 'none', // Não deixa clicar no botão
             });
         }
     }
@@ -58,25 +58,28 @@ $(document).ready(function () {
 
 // MOSTRAR PAISES ALEATORIAMENTE
 $(document).ready(function () {
+    const API_URL = 'https://restcountries.com/v3.1/all';
     const container = $('#randomCountries');
 
+    // Buscar Dados da API
     function fetchCountries() {
         $.ajax({
-            url: 'https://restcountries.com/v3.1/all',
+            url: API_URL,
             method: 'GET',
 
-            // SUCESSO
+            // SUCESS
             success: function (countries) {
 
-                // Seleciona 3 Países Aleatórios
-                const randomCountries = [];
-                while (randomCountries.length < 3) {
-                    const country = countries[Math.floor(Math.random() * countries.length)];
-                    if (!randomCountries.includes(country)) randomCountries.push(country);
-                }
+                // Baralha o Array dos Países inteiros
+                    // [...countries] ::: Cria uma cópia do Array original
+                    // .sort(() => 0.5 - Math.random()) ::: Math.random() gera entre 0 e 1 e (0.5 - 0 = 0.5) (0.5 - 1 = -0.5) ... Se valor = negativo, 1 ordernado antes de 2 |  Se valor = positivo, 1 ordernado depois de 2
+                const shuffled = [...countries].sort(() => 0.5 - Math.random());
 
-                // Ciclo de forEach para dar Append dos 3 Países ao container #randomCountries
-                container.empty();  // o .empty limpa os anteriores
+                // Seleciona os 3 primeiros Países do array baralhado
+                const randomCountries = shuffled.slice(0, 3);
+
+                // Ciclo de forEach para dar Append dos 3 Países ao Container (#randomCountries)
+                container.empty();  // o .empty limpa todos elementos anteriores (Limpar a Mensagem de Erro)
                 randomCountries.forEach (country => {
                     
                     container.append(`
@@ -93,13 +96,14 @@ $(document).ready(function () {
                 });
             },
 
-            // ERRO
+            // ERROR
             error: function () {
-                console.error('Erro ao carregar os países.');
+                console.error('Erro ao carregar os Países.');
             }
 
         });
     }
 
+    // Inicializar
     fetchCountries();
 });
