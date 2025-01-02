@@ -32,7 +32,7 @@ $(document).ready(function () {
             },
 
             // ERROR
-            error: () => console.error('Erro ao carregar os Países.')
+            error: () => console.error('Erro ao carregar os Países!')
         });
     }
 
@@ -79,7 +79,7 @@ $(document).ready(function () {
                                 </p>
                             </div>
                             <div>
-                                <a href="pais.html?name=${country.name.common}" class="btn btn-explorar rounded-0 my-2 mx-2 fs-16">Explorar</a>
+                                <a href="pais.html?name=${country.name.common}" class="btn btn-explorar rounded-0 my-2 mx-2 fs-16">Detalhes</a>
                                 <button 
                                     class="btn btn-favorite ${isFavorite(country.name.common) ? 'remove-favorite' : 'add-favorite'} rounded-0 my-2 mx-2 fs-16"
                                     data-country-name="${country.name.common}">

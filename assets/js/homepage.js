@@ -97,9 +97,7 @@ $(document).ready(function () {
             },
 
             // ERROR
-            error: function () {
-                console.error('Erro ao carregar os Países.');
-            }
+            error: () => console.error('Erro ao carregar os Países!')
 
         });
     }

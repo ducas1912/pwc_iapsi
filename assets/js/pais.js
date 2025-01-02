@@ -15,16 +15,21 @@ $(document).ready(() => {
         return;
     }
 
-    // Buscar Dados do País na API 
+    // Buscar Dados do País à API 
     const fetchCountryDetails = () => {
         $.ajax({
             url: API_URL,
             method: 'GET',
+
+            // SUCESS
             success: data => {
                 const country = data.find(c => c.name.common === countryName);
                 country ? displayCountryDetails(country) : alert('País não encontrado.');
             },
-            error: () => console.error('Erro ao buscar detalhes do país.')
+
+            
+            // ERROR
+            error: () => console.error('Erro ao carregar detalhes do País!')
         });
     };
 
